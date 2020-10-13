@@ -1,7 +1,7 @@
 import serial
 import time 
 
-phone = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=1.0)
+phone = serial.Serial("/dev/ttyS0", baudrate=115200, timeout=1.0)
 
 phone.write('AT\r\n')
 result=phone.read(100)
